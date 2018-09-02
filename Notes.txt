@@ -1,0 +1,2 @@
+To create subdomain websites with their own urls see examples at  http://clonezone.link/ 
+  - publish method will be similar
