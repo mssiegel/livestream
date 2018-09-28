@@ -106,8 +106,8 @@ figcaption {
   background-color: #28a745;
   text-decoration: none;
   margin-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 #sample-page-btn:hover {
   background-color: #218838;
