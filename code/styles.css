@@ -60,8 +60,10 @@ h2 {
   line-height: 1.7;
 }
 
-
-
+.row ul {
+  justify-self: center;
+  padding: 0;
+}
 
 li:before {
   content: '✔';
