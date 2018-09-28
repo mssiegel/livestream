@@ -157,12 +157,10 @@ button img {
   background-color: #138496;
 }
 
-
-
 footer {
-  margin-top: 60px;
   background-color: #eee;
-  padding: 15px;
+  border-top: 1px solid grey;
+  margin-top: 60px;
 }
 
 .footer-title {
