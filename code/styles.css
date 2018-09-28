@@ -60,9 +60,8 @@ h2 {
   line-height: 1.7;
 }
 
-.row ul {
-  padding: 0;
-}
+
+
 
 li:before {
   content: '✔';
