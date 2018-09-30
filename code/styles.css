@@ -66,14 +66,21 @@ h2 {
 }
 
 li:before {
-  content: '✔';
+/*  content: '✔';*/
+
+  content:"\2714\0020";
+
   color: green;
   margin-right: .2em;
 }
+/*ul:nth-child(2) li:before {content:'✔'; }*/
 
 .row li {
   margin-bottom: 10px;
   list-style: none;
+}
+
+fig-caption:before {
 }
 
 figcaption {
