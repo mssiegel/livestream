@@ -61,26 +61,17 @@ h2 {
 }
 
 .row ul {
+  list-style: none;
   justify-self: center;
   padding: 0;
 }
 
-li:before {
-/*  content: '✔';*/
-
-  content:"\2714\0020";
-
-  color: green;
-  margin-right: .2em;
+.checkmark {
+  width: 14px;
 }
-/*ul:nth-child(2) li:before {content:'✔'; }*/
 
 .row li {
   margin-bottom: 10px;
-  list-style: none;
-}
-
-fig-caption:before {
 }
 
 figcaption {
