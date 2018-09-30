@@ -7,9 +7,9 @@ html {
   box-sizing: inherit;
 }
 
-
 body {
   font-family: Arial, sans-serif;
+  font-size:16px;
 }
 
 h1 {
@@ -18,74 +18,76 @@ h1 {
   text-align: center;
   text-shadow: 1px 1px 1px grey;
   margin-top: 10px;
+  /*Changes default margin after h1 */
+  -webkit-margin-after: 15px;
 }
 
 h1 img {
   height: 2.3rem;
   margin-bottom: -2px;
+  margin-right: 10px;
 }
 
 #header-img {
-  width: 100%;
+  max-width: 100%;
 }
 
-
-/*
 section {
-  width: 85%;
+  width: 95%;
   margin: auto;
-}*/
-
-.row img {
-  max-width: 100%;
 }
 
 h2 {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.2;
-  text-shadow: 1px 1px 1px grey;
-  margin-bottom: 7px;
+  margin-top: 15px;
+  margin-bottom: 17px;
+  text-shadow: 0px 1px 1px grey;
 }
 
 .large-font {
   font-size: 18px;
 }
 
-.center {
-  text-align: center;
-}
-
 .line-height-high {
   line-height: 1.7;
-}
-
-.row ul {
-  list-style: none;
-  justify-self: center;
-  padding: 0;
-}
-
-.checkmark {
-  width: 14px;
-}
-
-.row li {
-  margin-bottom: 10px;
-}
-
-figcaption {
-  color: grey;
-  font-size: 15px;
 }
 
 .small-font {
   font-size: 16px;
 }
 
+.row-image {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+}
+
+figcaption {
+  color: grey;
+  font-size: 15px;
+  text-align: center;
+}
+
+.row ul {
+  list-style: none;
+  justify-self: center;
+  padding: 0;
+  text-align: center;
+}
+
+.row li {
+  margin-bottom: 14px;
+}
+
+.checkmark {
+  width: 14px;
+}
+
 #globe-app {
   display: block;
-  margin: 0 auto 20px auto;
+  margin: 5px auto 20px auto;
 }
 
 .no-text-decoration {
@@ -95,41 +97,29 @@ figcaption {
 .btn {
   display: flex;
   align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
   font-size: 20px;
   padding: 5px 10px;
   color: white;
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  margin: auto;
-  margin-bottom: 30px;
+}
+
+button img {
+  height: 45px;
+  margin-right: 10px;
 }
 
 #sample-page-btn {
   background-color: #28a745;
-  text-decoration: none;
   margin-bottom: 50px;
   padding-left: 40px;
   padding-right: 40px;
 }
 #sample-page-btn:hover {
   background-color: #218838;
-}
-
-.question {
-  color: green;
-  margin-bottom: 4px;
-}
-
-.answer {
-  color: #444;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-button img {
-  height: 45px;
-  margin-right: 10px;
 }
 
 #instructions {
@@ -143,7 +133,7 @@ button img {
 }
 
 .instructions-details {
-  color: #555;
+  color: #444;
   margin: 8px;
   line-height: 1.4;
 }
@@ -155,10 +145,27 @@ button img {
   background-color: #138496;
 }
 
+.question {
+  color: darkgreen;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.answer {
+  color: #444;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
 footer {
   background-color: #eee;
   border-top: 1px solid grey;
   margin-top: 60px;
+  padding: 0 15px 10px 15px;
+}
+
+footer p {
+  text-align: justify;
 }
 
 .footer-title {
@@ -171,7 +178,7 @@ footer {
 /* Media Queries */
 
 /*splits footer into separate columns on larger screens*/
-@media only screen and (min-width: 600px) {
+@media (min-width: 1100px) {
   h1 {
     font-size: 3rem;
   }
@@ -184,13 +191,6 @@ footer {
     width: 70%;
     margin: auto;
   }
-/*
-
-  .our-role {
-    width: 70%;
-    margin: 40px auto;
-  }
-*/
 
   .row {
     display: grid;
@@ -201,16 +201,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr auto;
     grid-gap: 50px;
-    padding-left: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
-
-  footer p {
-    text-align: justify;
-  }
-
-  footer > p:last-of-type {
-    padding-right: 60px;
-  }
-
 
 }
