@@ -3,7 +3,7 @@ import './images/globe-app.ico';
 import './images/globe-app.png';
 import './images/header-phone-flowers.jpg';
 import './images/woman-videoing-wedding.jpg';
-import './images/./images/checkmark.png';
+import './images/checkmark.png';
 import './images/fb-icon.png';
 import './images/pdf-icon.png';
 import './images/bride-with-flower-headband.jpg';
