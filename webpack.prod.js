@@ -39,7 +39,7 @@ module.exports = {
         ]
       },
       {//extracts any other file, such as images;
-        test: /\.(png|jpg|gif|ico|svg|woff|woff2|pdf)$/,
+        test: /\.(png|jpg|gif|ico|svg|woff|woff2)$/,
         use: [
           {
             loader: 'file-loader',
@@ -48,6 +48,16 @@ module.exports = {
           },
           //optimizes and minifies all images
           'image-webpack-loader',
+        ]
+      },
+      {//extracts pdfs;
+        test: /\.pdf$/,
+        use: [
+          {
+            loader: 'file-loader',
+            //pdfs must be outputted to folder 'pdfs' to match original 'pdfs' folder name
+            options: {name: '[name].[ext]', outputPath: 'pdfs/'}
+          }
         ]
       }
     ]

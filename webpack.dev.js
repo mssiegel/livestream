@@ -24,6 +24,7 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       },
       {//extracts all other files such as images
+        //dev build does NOT properly copy pdf files to correct 'pdfs' folder location, thus it relies on pdf files from dist folder
         test: /\.(png|jpg|gif|ico|svg|woff|woff2|pdf)$/,
         use: [
           {
@@ -31,7 +32,7 @@ module.exports = {
             options: {name: '[name].[ext]'}
           }
         ]
-      }
+      },
     ]
   }
 };

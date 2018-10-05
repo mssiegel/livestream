@@ -7,3 +7,5 @@ import './images/checkmark.png';
 import './images/fb-icon.png';
 import './images/pdf-icon.png';
 import './images/bride-with-flower-headband.jpg';
+import './pdfs/Set_up_Facebook_Page_2.0.pdf';
+import './pdfs/Stream_with_Facebook_2.0.pdf';
