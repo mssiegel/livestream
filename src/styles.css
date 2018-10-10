@@ -172,7 +172,7 @@ footer p {
 }
 
 .footer-title {
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   display: block;
 }
@@ -202,7 +202,8 @@ footer p {
 
   footer {
     display: grid;
-    grid-template-columns: 1fr 1fr auto;
+    /* note: use 'auto' instead of '1fr' if column text is shorter than usual column width */
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
     padding-left: 80px;
     padding-right: 80px;
